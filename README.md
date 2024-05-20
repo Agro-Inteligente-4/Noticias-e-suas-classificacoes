@@ -170,6 +170,13 @@ ggplot(data_frame_com_sentimento, aes(x = factor(sentiment), fill = factor(senti
 
 ```
 
+<figure>
+
+  <img src="analise-de-sentimento-sem-resumo.png" alt="analise-de-sentimento-sem-resumo">
+
+<br>
+
+
 **Modelagem de Tópicos** A modelagem de tópicos é uma técnica poderosa na análise de texto, sendo especialmente relevante no contexto da coleta e análise de notícias relacionadas à cana-de-açúcar. Esta abordagem permite identificar padrões subjacentes nos dados textuais, agrupando automaticamente palavras e documentos relacionados a tópicos específicos. Atravez dessa abordagem conseguimos resultados relevantes como: Identificação de Tópicos Relevantes, Atribuição de Palavras-Chave entre outros.
 
 ```{r}
@@ -205,6 +212,12 @@ ap_top_terms %>%
   scale_y_reordered() +
   labs(title = "Principais termos para cada tópico", x = "Beta Probabilidade", y = "Termos")
 ```
+<figure>
+
+  <img src="modelagem-de-topicos-sem-resumo.png" alt="modelagem-de-topicos-sem-resumo">
+
+<br>
+
 
 *Mudando a abordagem na tentativa de conseguir melhores resultados* **Extração e Resumo Automático dos Dados**
 
@@ -387,6 +400,11 @@ ggplot(data_frame_com_sentimento_resumo, aes(x = factor(sentiment), fill = facto
   scale_x_discrete(labels = c("Negativo" = -1, "Neutro" = 0, "Positivo" = 1)) +
   theme_minimal()
 ```
+<figure>
+
+  <img src="analise-de-sentimento.png" alt="analise-de-sentimento">
+
+<br>
 
 **Modelagem de Tópicos** A modelagem de tópicos é uma técnica poderosa na análise de texto, sendo especialmente relevante no contexto da coleta e análise de notícias relacionadas à cana-de-açúcar. Esta abordagem permite identificar padrões subjacentes nos dados textuais, agrupando automaticamente palavras e documentos relacionados a tópicos específicos. Atravez dessa abordagem conseguimos resultados relevantes como: Identificação de Tópicos Relevantes, Atribuição de Palavras-Chave entre outros.
 
@@ -427,3 +445,8 @@ ap_top_terms %>%
 # Print the topics
 #print(topics)
 ```
+<figure>
+
+  <img src="modelagem-de-topicos.png" alt="modelagem-de-topicos">
+
+<br>
